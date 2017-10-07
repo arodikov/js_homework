@@ -1,13 +1,13 @@
 function parseAmount(amount) {
 
-  let commasCount = amount.split(",").length - 1;
+  let amaReg = /^\d{1,}$|^\d{1,},\d{1,2}$/;
 
-  if (commasCount > 1) {
-    alert("Дохера запятых");
-  } else {
-    alert(parseFloat(amount.replace(',', '.')) * 100);
+  if (amount.match(amaReg)) {
+      alert(parseFloat(amount.replace(',', '.')) * 100);
+    } else {
+      alert("Некорректная сумма");
+    }
   }
-}
 
-let ama = prompt("Введите сумму:");
-parseAmount(ama);
+  let ama = prompt("Введите сумму:");
+  parseAmount(ama);
