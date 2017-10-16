@@ -1,8 +1,3 @@
-function sortByDate(a, b) {
-  if (a.date < b.date) return 1;
-  if (a.date > b.date) return -1;
-}
-
 function sortByLink(a, b) {
   if (a.name > b.name) return 1;
   if (a.name < b.name) return -1;
