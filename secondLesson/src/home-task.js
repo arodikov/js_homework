@@ -9,7 +9,6 @@ function sortByLink(a, b) {
 }
 
 export default function superTransform(arr) {
-  arr.sort(sortByDate);
 
   let operDate = {};
 
